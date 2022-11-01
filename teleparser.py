@@ -20,7 +20,7 @@ def init():
 	cursor.execute(
 		"""
 		CREATE TABLE IF NOT EXISTS 'post' (
-			id INTEGER PRIMARY KEY,
+			id INTEGER,
 			channel TEXT REFERENCES channel(id),
 			text TEXT
 		)
